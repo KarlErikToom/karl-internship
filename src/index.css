@@ -74,10 +74,22 @@
   background-color: lightgrey;
   border-radius: 50%;
 }
+.author__img--skeleton2{
+  height: 80px;
+  width: 80px;
+  background-color: lightgray;
+  border-radius: 50%;
+}
 .author__name--skeleton {
   height: 16px;
   background-color: lightgrey;
   width: 60px;
+}
+.author__wallet--skeleton{
+  height: 12px;
+  width: 160px;
+  background-color: lightgray;
+  margin-top: 12px;
 }
 .price--skeleton{
   height: 12px;
@@ -85,13 +97,22 @@
   background-color: lightgray;
   margin-top: 12px;
 }
+.btn--skeleton{
+  width: 120px;
+  height: 42px;
+  background-color: lightgray;
+  margin-left: 24px;
+}
 
 .img-fluid--skeleton,
 .pp-coll--skeleton,
 .collection--skeleton,
 .code--skeleton,
 .author__img--skeleton,
+.author__img--skeleton2,
+.author__wallet--skeleton,
 .author__name--skeleton,
+.btn--skeleton,
 .price--skeleton {
   background: linear-gradient(
     90deg,
@@ -101,6 +122,14 @@
   );
   background-size: 200% 100%;
   animation: skeletonShine 1.5s linear infinite;
+}
+
+
+.unfollow{
+  display: none;
+}
+.noshow{
+  display: none;
 }
 
 @keyframes skeletonShine {
