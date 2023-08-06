@@ -74,7 +74,7 @@
   background-color: lightgrey;
   border-radius: 50%;
 }
-.author__img--skeleton2{
+.author__img--skeleton2 {
   height: 80px;
   width: 80px;
   background-color: lightgray;
@@ -85,23 +85,61 @@
   background-color: lightgrey;
   width: 60px;
 }
-.author__wallet--skeleton{
+.author__wallet--skeleton {
   height: 12px;
   width: 160px;
   background-color: lightgray;
   margin-top: 12px;
 }
-.price--skeleton{
+.price--skeleton {
   height: 12px;
   width: 20px;
   background-color: lightgray;
   margin-top: 12px;
 }
-.btn--skeleton{
+.btn--skeleton {
   width: 120px;
   height: 42px;
   background-color: lightgray;
   margin-left: 24px;
+}
+.details--skeleton {
+  height: 42px;
+  width: 360px;
+  background-color: lightgray;
+}
+.info--skeleton {
+  height: 36px;
+  width: 300px;
+  margin-top: 24px;
+  background-color: lightgray;
+}
+.description--skeleton {
+  height: 32px;
+  width: 400px;
+  background-color: lightgray;
+}
+.owner--skeleton {
+  height: 36px;
+  width: 70px;
+  background-color: lightgray;
+  margin-top: 24px;
+}
+.author--skeleton {
+  height: 36px;
+  width: 70px;
+  background-color: lightgray;
+  margin-top: 64px;
+}
+.price--skeleton2 {
+  height: 36px;
+  width: 62px;
+  background-color: lightgray;
+}
+.img--skeleton {
+  height: 120%;
+  width: 80%;
+  background-color: lightgray;
 }
 
 .img-fluid--skeleton,
@@ -113,6 +151,13 @@
 .author__wallet--skeleton,
 .author__name--skeleton,
 .btn--skeleton,
+.details--skeleton,
+.info--skeleton,
+.description--skeleton,
+.owner--skeleton,
+.author--skeleton,
+.price--skeleton2,
+.img--skeleton,
 .price--skeleton {
   background: linear-gradient(
     90deg,
@@ -124,11 +169,10 @@
   animation: skeletonShine 1.5s linear infinite;
 }
 
-
-.unfollow{
+.unfollow {
   display: none;
 }
-.noshow{
+.noshow {
   display: none;
 }
 

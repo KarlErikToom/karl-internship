@@ -15,7 +15,7 @@ const Author = () => {
     );
     setAuthor(data);
     setLocalFollowers(data.followers);
-    setLoading(false)
+    setLoading(false);
   }
 
   function handleFollowClick() {
@@ -52,10 +52,10 @@ const Author = () => {
                       {loading ? (
                         <div className="author__img--skeleton2"></div>
                       ) : (
-                        <img src={author.authorImage} alt="" />
+                          <img src={author.authorImage} alt="" />
                       )}
-
                       <i className="fa fa-check"></i>
+
                       <div className="profile_name">
                         {loading ? (
                           <h4>
