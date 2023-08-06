@@ -12,7 +12,6 @@
 @import "./css/styles/coloring.css";
 @import "/node_modules/slick-carousel/slick/slick-theme.css";
 
-
 /* HOT COLLECTION
 */
 .padding {
@@ -30,7 +29,8 @@
   top: 40% !important;
 }
 
-.slick-prev::before, .slick-next::before {
+.slick-prev::before,
+.slick-next::before {
   color: white !important;
   background-color: black !important;
   border-radius: 50% !important;
@@ -43,39 +43,62 @@
   justify-content: center;
 }
 
-
 /*SKELETON LOADING STATE*/
-.skeleton{
+.skeleton {
   width: 25%;
 }
-.img-fluid--skeleton{
+.img-fluid--skeleton {
   width: 320px;
   height: 160px;
   background-color: lightgray;
 }
-.pp-coll--skeleton{
+.pp-coll--skeleton {
   width: 60px;
   height: 60px;
   border-radius: 50%;
   background-color: lightgray;
 }
-.collection--skeleton{
+.collection--skeleton {
   height: 24px;
   background-color: lightgray;
 }
-.code--skeleton{
+.code--skeleton {
   height: 12px;
   max-width: 60px;
   margin-top: 12px;
   background-color: lightgray;
 }
-
+.author__img--skeleton {
+  height: 40px;
+  width: 40px;
+  background-color: lightgrey;
+  border-radius: 50%;
+}
+.author__name--skeleton {
+  height: 16px;
+  background-color: lightgrey;
+  width: 60px;
+}
+.price--skeleton{
+  height: 12px;
+  width: 20px;
+  background-color: lightgray;
+  margin-top: 12px;
+}
 
 .img-fluid--skeleton,
 .pp-coll--skeleton,
 .collection--skeleton,
-.code--skeleton {
-  background: linear-gradient(90deg, rgba(211, 211, 211, 0.3), rgba(211, 211, 211, 0.6), rgba(211, 211, 211, 0.3));
+.code--skeleton,
+.author__img--skeleton,
+.author__name--skeleton,
+.price--skeleton {
+  background: linear-gradient(
+    90deg,
+    rgba(211, 211, 211, 0.3),
+    rgba(211, 211, 211, 0.6),
+    rgba(211, 211, 211, 0.3)
+  );
   background-size: 200% 100%;
   animation: skeletonShine 1.5s linear infinite;
 }
