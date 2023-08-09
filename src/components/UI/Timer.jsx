@@ -9,7 +9,7 @@ function Timer({ duration }) {
             setTime(time - 1000)
         }, 1000);
 
-        return () => clearTimeout
+        return () => clearTimeout(timerId)
     }
   }, [time, duration]);
 

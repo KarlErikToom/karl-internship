@@ -2,13 +2,15 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import Timer from "../UI/Timer";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const ExploreItems = () => {
   const [exploreData, setExploreData] = useState([]);
   const [itemsToShow, setItemsToShow] = useState(8);
   const [loading, setLoading] = useState(true);
   async function getExplore(event) {
-    setLoading(true)
+    setLoading(true);
     const { data } = await axios.get(
       `https://us-central1-nft-cloud-functions.cloudfunctions.net/explore?filter=${event}`
     );
@@ -18,7 +20,6 @@ const ExploreItems = () => {
   function loadMore() {
     setItemsToShow((prevItems) => [prevItems + 4]);
   }
-  
 
   useEffect(() => {
     getExplore(exploreData);
@@ -26,7 +27,11 @@ const ExploreItems = () => {
   return (
     <>
       <div>
-        <select id="filter-items" onChange={(event) =>getExplore(event.target.value)} defaultValue="">
+        <select
+          id="filter-items"
+          onChange={(event) => getExplore(event.target.value)}
+          defaultValue=""
+        >
           <option value="">Default</option>
           <option value="price_low_to_high">Price, Low to High</option>
           <option value="price_high_to_low">Price, High to Low</option>
@@ -59,7 +64,7 @@ const ExploreItems = () => {
               : null;
 
             return (
-              <div
+              <div 
                 key={explore.id}
                 className="d-item col-lg-3 col-md-6 col-sm-6 col-xs-12"
                 style={{ display: "block", backgroundSize: "cover" }}
